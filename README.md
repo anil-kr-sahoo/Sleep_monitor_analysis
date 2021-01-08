@@ -3,11 +3,11 @@ Monitor Sleep Quality data Analytics
 
 
 - Creating dynamic excel and csv file for random sleep percentages.
-- Creating data from 12 mid night of current year to last hour now we passed just now.
+- Creating data from 12 mid night of current year upto last hour now we passed just now.
 - Each day we consider regular 8 hours night sleep and 3 hours day nap.
 - Creating csv file for analytics purpose.
 - Asking user to choose a certain month he/she wants for analytics.
-- Then asking for certain date of the choosen month.
+- After selecting month, we asking for certain date of the choosen month.
 - Showing full day Sleep quality of the selected date.
 
 How to Run

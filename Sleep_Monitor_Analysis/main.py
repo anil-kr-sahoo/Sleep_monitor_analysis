@@ -30,7 +30,7 @@ if month == current_month:
     end_day = datetime.now().day
 else:
     _, end_day = calendar.monthrange(datetime.now().year, month)
-date_list = [str(datetime.now().year)+"-"+"%02d" % month+"-"+"%02d" % i for i in list(range(first_day, end_day))]
+date_list = [str(datetime.now().year)+"-"+"%02d" % month+"-"+"%02d" % i for i in list(range(first_day, end_day+1))]
 input_date = input_given(data_list=date_list, date_required=True)
 
 if not input_date:

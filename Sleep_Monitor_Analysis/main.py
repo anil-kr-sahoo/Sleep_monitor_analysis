@@ -11,18 +11,17 @@ plt.style.use("bmh")
 data_frame = pd.read_csv("sleep_monitor.csv")
 all_series = data_frame['Date']
 valid_data_series = list(set(all_series))
-print("\nTotal Days of Data We have "+str(len(valid_data_series)))
+print("\nTotal Days of Data We have " + str(len(valid_data_series)))
 
 current_month = datetime.now().month
-month_list = list(range(1, current_month+1))
+month_list = list(range(1, current_month + 1))
 
 month_list_name = [calendar.month_name[i] for i in month_list]
 input_month = input_given(data_list=month_list_name)
 if input_month not in month_list_name:
     print("\nPlease enter a valid month")
     quit()
-print("Month Given - "+ input_month)
-
+print("Month Given - " + input_month)
 
 month = datetime.strptime(input_month[:3], "%b").month
 first_day = 1
